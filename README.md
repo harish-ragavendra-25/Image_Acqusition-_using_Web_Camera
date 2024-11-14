@@ -42,7 +42,7 @@ import cv2
 videoCaptureObject = cv2.VideoCapture(0)
 ret, frame = videoCaptureObject.read()
 if ret:
-    cv2.imwrite("sam.jpg", frame)
+    cv2.imwrite("Harish.jpg", frame)
 videoCaptureObject.release()
 cv2.destroyAllWindows()
 ```
@@ -53,7 +53,7 @@ import cv2
 cap=cv2.VideoCapture(0)
 while True:
     ret,frame=cap.read()
-    cv2.imshow('Sam',frame)
+    cv2.imshow('Harish',frame)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -74,7 +74,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=smaller_frame
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222230128-Sam',image)
+    cv2.imshow('212222230045-Harish',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -95,7 +95,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222230128-Sam',image)
+    cv2.imshow('212222230045-Harish',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -105,12 +105,14 @@ cv2.destroyAllWindows()
 ## Output
 
 ### i) Write the frame as JPG image
-![image](./images/1.png)
+![Screenshot 2024-11-14 140058](https://github.com/user-attachments/assets/a847e368-dc0b-4b5e-a5b3-5921c41eaec0)
 ### ii) Display the video
-![image](./images/2.png)
+![Screenshot 2024-11-14 140058](https://github.com/user-attachments/assets/a847e368-dc0b-4b5e-a5b3-5921c41eaec0)
 ### iii) Display the video by resizing the window
-![image](./images/3.png)
+![Screenshot 2024-11-14 140135](https://github.com/user-attachments/assets/fb3a4309-2de5-4f2a-bff2-eaa36a674623)
 ### iv) Rotate and display the video
-![image](./images/4.png)
+![Screenshot 2024-11-14 140214](https://github.com/user-attachments/assets/f9b5de8c-723b-42ed-ad03-00d4869bc760)
+
+
 ## Result:
 Thus the image accessed from webcamera is displayed successfully using openCV.
